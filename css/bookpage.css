@@ -1,0 +1,80 @@
+#bookpage-container{
+    background-color: rgb(244,244,244);
+    position: relative;
+    width:100%;
+}
+#slider-container{
+    width:50%;
+}
+#image-slider{
+    position: relative;
+    overflow: hidden;
+}
+#image-slider>img{
+    width:100%;
+    height:520px;
+    border-radius: 10px;
+}
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left: -30;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border: 0;
+}
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    right: -30;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border: 0;
+}
+
+#all-photos{
+    position:absolute;
+    padding:10px 12px;
+    left: 80%;
+    bottom: 20;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.323);
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 30px;
+}
+#all-photos:hover{
+    background-color: rgba(0, 0, 0, 0.707);
+
+
+}
+#all-photos::before{
+    
+    content:"";
+    display: inline-block;
+    vertical-align: top;
+    width: 1.1em;
+    height: 1em;
+    background:url(/images/gallary_icon.webp);
+    background-size: cover;
+}
+#all-photos::after{
+    content:"";
+    display: inline-block;
+    vertical-align: top;
+    width: 1.1em;
+    height: 1em;
+    background:url(/images/right_icon.png);
+    background-size: cover;
+
+}
