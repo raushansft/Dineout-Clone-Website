@@ -4,7 +4,7 @@
     width:100%;
 }
 #slider-container{
-    width:50%;
+    width:52%;
 }
 #image-slider{
     position: relative;
@@ -17,8 +17,8 @@
 }
 .left-arrow{
     position: absolute;
-    top: 50%;
-    left: -30;
+    top: 40%;
+    left: -43;
     background: rgba(0,0,0,.6);
     border-radius: 50%;
     padding: 5px;
@@ -27,10 +27,16 @@
     height: 80px;
     border: 0;
 }
+.left-arrow>i{
+    font-size: 30px;
+    margin-top: 23px;
+    margin-left: 43px;
+    color: white;
+}
 .right-arrow{
     position: absolute;
-    top: 50%;
-    right: -30;
+    top: 40%;
+    right: -40;
     background: rgba(0,0,0,.6);
     border-radius: 50%;
     padding: 5px;
@@ -38,6 +44,13 @@
     width: 80px;
     height: 80px;
     border: 0;
+    text-align: center;
+}
+.right-arrow>i{
+    font-size: 30px;
+    margin-top: 23px;
+    margin-right: 25px;
+    color: white;
 }
 
 #all-photos{
@@ -74,7 +87,115 @@
     vertical-align: top;
     width: 1.1em;
     height: 1em;
-    background:url(/images/right_icon.png);
+    background:url(/images/right_icon_white.png);
     background-size: cover;
 
 }
+
+
+#booking-details-container{
+    width:23%;
+    position: absolute;
+    right: 10;
+    top:10;
+    height:480px;
+    border-radius: 5px;
+    background-color: white;
+}
+#booking-details-container>h5{
+    margin: 0px;
+    padding: 12px 0px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+.select-date{
+    width:100%;
+    margin-top: 10px;
+    height: 92px;
+    /* overflow: scroll;   */
+}
+.select-date-label{
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #202020;
+}
+.calender{
+    width:93%;
+    margin: auto;
+    box-shadow: 2px 2px 25px 2px rgb(236,236,236);   
+}
+.month{
+    width:13%;
+    padding:10px 0px 10px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(43,152,247);
+}
+.month>span{
+    background-color: #0b5b8f;
+    color: white;
+    margin-top: 5px;
+    font-size: 8px;
+    padding:2px 6px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+}
+.month>img{
+    margin-top: 6px;
+    width:30px;
+    height: 35px;
+}
+.days{
+    width: 81%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+}
+.days>i{
+    display: inline-block;
+}
+.days>div{
+    display: inline-block;
+}
+
+.dates{
+    width:84%;
+    vertical-align: middle;
+    overflow-x: scroll;
+}
+.dates::-webkit-scrollbar{
+    display: none;
+}
+.dates>ul{
+    padding: 0;
+    list-style: none;
+    display: table;
+}
+.dates>ul>li{
+    display: table-cell;
+    padding: 0 7px;
+    color: rgb(105,105,105);
+}
+.dates>ul>li>span{
+    font-size: 14px;
+    font-weight: 300;
+}
+.dates>ul>li>div{
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+

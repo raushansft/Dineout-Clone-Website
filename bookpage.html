@@ -5,16 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookPage</title>
     <link rel="stylesheet" type="text/css" href="./css/bookpage.css"/>
+    <script src="https://kit.fontawesome.com/c16d4da148.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="bookpage-container">
         <div id="slider-container">
           <div id="image-slider">
               <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/w/v/p50376-162640782360f1038f04080.jpg?tr=tr:n-large"/>
-              <div class="left-arrow"></div>
-              <div class="right-arrow"></div>
+              <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+              <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
               <button id="all-photos"> 13+ Images </button>
-            </div>   
+            </div>  
+            <div id="booking-details-container">
+                <h5>Select an Offer or Deal</h5>
+                
+                <div class="select-date">
+                    <div class="select-date-label">Select Date</div>
+                    <div class="calender">
+                        <div class="month">
+                            <span>May</span><br/>
+                            <img src="./images/calendar-img.webp"/>
+                        </div>
+                        <div class="days">
+                            <i class="fa-solid fa-angle-left"></i>
+                            <div class="dates">
+                                <ul id="ul-container">
+                                    <!-- <li>
+                                        <span class="day">Today</span>
+                                        <div class="date">22</div>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>   
+                    </div>
+                    <div class="booking-details">
+
+                    </div>
+
+                </div>
+
+            </div> 
         </div>
     </div>
 </body>
