@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp page</title>
+</head>
+<style>
+     body{
+        padding-left:550px;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #main{
+        width:500px;
+        height:500px;
+        border:1px solid black;
+        background-color:aqua;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        
+    }
+    form{
+        margin-top:50px;
+        color:rgb(23, 2, 2);
+        font-size:25px;
+        
+    }
+    input{
+        width:190px;
+        height:30px;
+        border-radius:5px;
+        /* border:none; */
+    }
+    button{
+        width:250px;
+        height:40px;
+        border-radius:10px;
+        border:none;
+        cursor:pointer;
+        background-color:brown;
+        font-size:20px;
+    }
+</style>
+<body>
+    <h1>this is conformation page</h1>
+ <div id = "main"><form>Enter Your OTP: <input type = "number" placeholder = "please enter your OTP" id = "otp"></form><br>
+    <button onclick = "submit()">continue</button></div>
+</body>
+</html>
+<script>
+    async function submit(){
+        try{
+           result = document.getElementById('otp').value,
+        
+          console.log(result)
+          console.log(result.length)
+          if(result.length===6 ){
+            alert("thank you")
+            window.location.href = "index.html"
+          }
+          else if(result.length===0){
+            alert('please enter otp')
+
+          }
+          else{
+              alert('incorrect otp, please enter correct otp')
+          }
+         
+        }
+        catch(err){
+        console.log(err)
+        }
+       
+    }
+    function display(data){
+        data.forEach(function(num){
+            
+        })
+    }
+</script>
