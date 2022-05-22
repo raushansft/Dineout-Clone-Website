@@ -19,3 +19,20 @@ Product =[
 
 
 ]
+
+
+  <!-- dummy  -->
+            <!-- <div>
+                <img src="" alt="">
+                <p>title</p>
+                <p>location</p>
+                <p>price</p>
+                <p>foodtype</p>
+                <p>rating</p>
+            </div> -->
+
+
+
+
+
+           
