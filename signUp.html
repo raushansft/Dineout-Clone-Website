@@ -5,57 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp page</title>
+    <link rel = "stylesheet" href = "login.css">
 </head>
-<style>
-     body{
-        padding-left:550px;
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    #main{
-        width:500px;
-        height:500px;
-        border:1px solid black;
-        background-color:aqua;
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-        
-    }
-    form{
-        margin-top:50px;
-        color:rgb(23, 2, 2);
-        font-size:25px;
-        
-    }
-    input{
-        width:190px;
-        height:30px;
-        border-radius:5px;
-        /* border:none; */
-    }
-    button{
-        width:250px;
-        height:40px;
-        border-radius:10px;
-        border:none;
-        cursor:pointer;
-        background-color:brown;
-        font-size:20px;
-    }
+
+ 
 </style>
 <body>
-    <h1>This is signUp  page</h1>
+    <!-- <h1>This is signUp  page</h1> -->
 
    <div id = "main">
-    <h2>Sign Up</h2>
+    <a href = "#" id = "close"></a>
+    <h2 id = "head">Sign Up</h2>
    
-    <form>Enter Name:  <input type = "text" placeholder = "Enter your name" id = "name"></form>
- <form>Phone: <input type = "number" placeholder = "Enter your phone number" id = "number"></form><br>
-    <button onclick = "signUP()">Sign Up</button></div>
+    <form> <input type = "text" placeholder = "Enter your name" id = "name"></form><hr id ="line">
+      <form><input type = "number" style = "margin-right:190px;border:none"placeholder = "Enter your phone number" id = "number"><hr id = "line"></form><br>
+    
+    <p style = "color:rgb(113, 111, 108);margin-top:-23px;margin-right:80px;">Your name will be verified in the next step</p>
+        <button onclick = "signUP()" id = "sign">Sign Up</button></div>
 </body>
 </html>
 <script>
+      var closebtn = document.getElementById("close");
+  closebtn.addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
 
 async function signUP(){
     try{
