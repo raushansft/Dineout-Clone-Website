@@ -23,9 +23,20 @@ function displayData(productDatas){
         console.log(product);
         let card=document.createElement("div");
 
+        let divImg=document.createElement("div");
+        divImg.setAttribute("class","img-feature");
+
         let _img=document.createElement("img");
         _img.src=product.img;
-        
+
+        let _rating= document.createElement("div");
+        _rating.textContent=product.rating;
+        _rating.setAttribute("class","rate")
+
+        divImg.append(_img,_rating);        
+
+        let divText=document.createElement("div");
+        divText.setAttribute("class","txt-feature");
 
         let _title= document.createElement("p");
         _title.textContent=product.title;
@@ -39,11 +50,12 @@ function displayData(productDatas){
         let _foodType= document.createElement("p");
         _foodType.textContent=product.foodType;
 
-        let _rating= document.createElement("p");
-        _rating.textContent=product.rating;
-        _img.append(_rating);
+      
 
-        card.append(_img,_title,_location,_price,_foodType,_rating);
+        divText.append(_title,_location,_price,_foodType,_rating);
+       
+
+        card.append(divImg,divText);
         productDetails.append(card);
         
     });
