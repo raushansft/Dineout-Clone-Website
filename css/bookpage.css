@@ -2,54 +2,85 @@
     background-color: rgb(244,244,244);
     position: relative;
     width:100%;
+    padding-left: 13%;
+    padding-top: 50px;
 }
+
+/* image modal */
+#image-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: #000000;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+#modal-img{
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+#close{
+    font-size: 17px;
+    color: white;
+    position:absolute;
+    right: 10;
+    top: 10;
+}
+
+
 #slider-container{
     width:52%;
 }
 #image-slider{
     position: relative;
     overflow: hidden;
+    transition:white 50s ease-in-out;
 }
 #image-slider>img{
     width:100%;
-    height:520px;
-    border-radius: 10px;
+    height:450px;
+    border-radius: 7px;
+    transition:white 50s ease-in-out;
+    
 }
-.left-arrow{
+#left-arrow{
     position: absolute;
     top: 40%;
     left: -43;
     background: rgba(0,0,0,.6);
     border-radius: 50%;
     padding: 5px;
-    z-index: 1;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border: 0;
 }
-.left-arrow>i{
-    font-size: 30px;
-    margin-top: 23px;
-    margin-left: 43px;
+#left-arrow>i{
+    font-size: 25px;
+    margin-top: 18px;
+    margin-left: 45px;
     color: white;
 }
-.right-arrow{
+#right-arrow{
     position: absolute;
     top: 40%;
     right: -40;
     background: rgba(0,0,0,.6);
     border-radius: 50%;
     padding: 5px;
-    z-index: 1;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border: 0;
     text-align: center;
 }
-.right-arrow>i{
-    font-size: 30px;
-    margin-top: 23px;
-    margin-right: 25px;
+#right-arrow>i{
+    font-size: 25px;
+    margin-top: 19px;
+    margin-right: 26px;
     color: white;
 }
 
@@ -94,13 +125,23 @@
 
 
 #booking-details-container{
-    width:23%;
-    position: absolute;
-    right: 10;
-    top:10;
+    width:21%;
+    position: fixed;
+    right: 11%;
+    top:40;
     height:480px;
     border-radius: 5px;
     background-color: white;
+}
+#booking-scroll-container{
+    overflow-x: scroll;
+    height: 440px;
+}
+#booking-scroll-container::-webkit-scrollbar{
+    width:5px;
+}
+#booking-scroll-container::-webkit-scrollbar-thumb{
+    background-color:rgb(160,160,160);
 }
 #booking-details-container>h5{
     margin: 0px;
@@ -119,12 +160,12 @@
     height: 92px;
     /* overflow: scroll;   */
 }
-.select-date-label{
+.select-date>h5{
     margin-top: 20px;
     margin-left: 18px;
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     color: #202020;
 }
 .calender{
@@ -134,7 +175,7 @@
 }
 .month{
     width:13%;
-    padding:10px 0px 10px 10px;
+    padding:20px 10px 20px 15px;
     display: inline-block;
     vertical-align: middle;
     background-color: rgb(43,152,247);
@@ -157,7 +198,7 @@
     height: 35px;
 }
 .days{
-    width: 81%;
+    width: 75%;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -165,37 +206,95 @@
 }
 .days>i{
     display: inline-block;
+    cursor: pointer;
+    
 }
 .days>div{
     display: inline-block;
+    /* transition:black 0.6s ease; */
 }
 
-.dates{
+#dates{
     width:84%;
     vertical-align: middle;
     overflow-x: scroll;
 }
-.dates::-webkit-scrollbar{
+#dates::-webkit-scrollbar{
     display: none;
 }
-.dates>ul{
+#dates>ul{
     padding: 0;
     list-style: none;
     display: table;
 }
-.dates>ul>li{
+#dates>ul>li{
     display: table-cell;
     padding: 0 7px;
     color: rgb(105,105,105);
 }
-.dates>ul>li>span{
+#dates>ul>li>span{
     font-size: 14px;
     font-weight: 300;
 }
-.dates>ul>li>div{
+#dates>ul>li>div{
     font-size: 15px;
     font-weight: 800;
     margin-top: 5px;
+}
+.timing-details{
+    padding:15px;
+}
+.timing-details>p{
+    margin: 0;
+    color: #696969;
+    padding-top: 5px;
+}
+.booking-details{
+    padding:15px;
+}
+div>h5{
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #202020;
+}
+
+.booking-details>input{
+    width:100%;
+    padding: 12px;
+    color:rgb(159,163,164);
+    background-color: rgb(241,241,241);
+    margin-bottom: 25px;
+    border: 0px solid rgb(241,241,241);
+    border-radius: 5px;
+}
+.booking-details>div>input{
+    width:100%;
+    padding: 12px;
+    color:rgb(159,163,164);
+    background-color: rgb(241,241,241);
+    margin-bottom: 25px;
+    border: 0px solid rgb(241,241,241);
+    border-radius: 5px;
+}
+#email{
+    display: none;
+}
+#request{
+    display: none;
+}
+#email-address,#special-request{
+    margin-bottom: 20px;
+}
+#email-address>i,#special-request>i{
+    font-size: 18px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 50%;
+    color: rgb(241,241,241);
+}
+#email-address>span,#special-request>span{
+    font-size: 13px;
 }
 
 

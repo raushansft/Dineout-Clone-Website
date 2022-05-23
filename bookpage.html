@@ -9,26 +9,33 @@
 </head>
 <body>
     <div id="bookpage-container">
+        <div id="image-modal">
+            <i id="close" class="fa-solid fa-xmark"></i>
+            <img id="modal-img"/>
+        </div>
         <div id="slider-container">
           <div id="image-slider">
-              <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/w/v/p50376-162640782360f1038f04080.jpg?tr=tr:n-large"/>
-              <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
-              <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
+              <img id="image-slider-image"/>
+              <div id="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+              <div id="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
               <button id="all-photos"> 13+ Images </button>
-            </div>  
+            </div> 
+            
             <div id="booking-details-container">
                 <h5>Select an Offer or Deal</h5>
+                <div id="booking-scroll-container">
+                
                 
                 <div class="select-date">
-                    <div class="select-date-label">Select Date</div>
+                    <h5>Select Date</h5>
                     <div class="calender">
                         <div class="month">
                             <span>May</span><br/>
                             <img src="./images/calendar-img.webp"/>
                         </div>
                         <div class="days">
-                            <i class="fa-solid fa-angle-left"></i>
-                            <div class="dates">
+                            <i class="fa-solid fa-angle-left" id="date-slide-left"></i>
+                            <div id="dates">
                                 <ul id="ul-container">
                                     <!-- <li>
                                         <span class="day">Today</span>
@@ -36,16 +43,36 @@
                                     </li> -->
                                 </ul>
                             </div>
-                            <i class="fa-solid fa-angle-right"></i>
+                            <i class="fa-solid fa-angle-right" id="date-slide-right"></i>
                         </div>   
                     </div>
-                    <div class="booking-details">
+                    <div class="timing-details">
+                        <div>Time</div>
+                        <p>Choose an available time slot</p>
+                        <div id="choose-timing">
 
+                        </div>
+                    </div>
+                    <div class="booking-details">
+                        <h5>Enter Guest Details</h5>
+                        <input type="text" id="guestName" placeholder="Guest Name"/>
+                        <input type="number" id="mobileNo" placeholder="Mobile No."/>
+                        <div id="email-address">
+                            <i class="fa-solid fa-circle-plus" id="email-add-icon"></i> 
+                            <span id="add-email-text">&nbsp;&nbsp;Email Address (Optional)</span>
+                            <input type="email" id="email" placeholder="Email Id"/>
+                        </div>
+                        <div id="special-request">
+                            <i class="fa-solid fa-circle-plus" id="request-add-icon"></i> 
+                            <span id="add-request-text">&nbsp;&nbsp;Any Special request (Optional)</span> 
+                            <input type="email" id="request" placeholder="Special request (Optional)"/>
+                        </div>
                     </div>
 
                 </div>
 
             </div> 
+            </div>
         </div>
     </div>
 </body>

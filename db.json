@@ -1,5 +1,72 @@
-{
-    "images":[
-        { "id": 1, "title": "json-server", "author": "typicode" }
+{   
+    "restaurent":[{
+        "id":1,
+        "name":"Smoke Hub Barbeque",
+        "type":"Casual Dining",
+        "costForTwo":1800,
+        "menuImage":"https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/v/j/m89764-1651310905626d013995c21.jpg?tr=tr:n-xlarge",
+        "foodType":[
+            "North Indian",
+            "Chinease",
+            "Italian"
+        ],
+        
+        "address":"Thyagaraya Nagar",
+        "city":"Cehnnai",
+        "openingTime":"12:00 PM",
+        "closingTime":"11:00 PM",
+        "rating":"3.7",
+        "images":[
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/e/h/p89764-16171796726064341871b65.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/q/r/p89764-161717968060643420a33c8.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/m/v/p89764-1617179688606434284733d.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/l/i/p89764-1617179696606434309da60.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/x/r/p89764-16171797056064343973372.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/l/u/p89764-161717971360643441c3d1f.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/e/z/p89764-16171797226064344a0464e.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/w/n/p89764-162641124360f110ebc45e9.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/u/o/p89764-1617179730606434529aa0f.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/c/q/p89764-16171797386064345a4f3ee.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/w/n/p89764-162641124360f110ebc45e9.jpg?tr=tr:n-medium"
+        ],
+        "reviews":[]
+
+    },
+    {
+        "id":2,
+        "name":"Locofeast",
+        "type":"Casual Dining",
+        "costForTwo":1800,
+        "menuImage":"https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/v/j/m89764-1651310905626d013995c21.jpg?tr=tr:n-xlarge",
+        "foodType":[
+            "North Indian",
+            "Chinease",
+            "Italian"
+        ],
+        
+        "address":"Thyagaraya Nagar",
+        "city":"Cehnnai",
+        "openingTime":"12:00 PM",
+        "closingTime":"11:00 PM",
+        "rating":"3.7",
+        "images":[
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/e/h/p89764-16171796726064341871b65.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/q/r/p89764-161717968060643420a33c8.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/m/v/p89764-1617179688606434284733d.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/l/i/p89764-1617179696606434309da60.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/x/r/p89764-16171797056064343973372.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/l/u/p89764-161717971360643441c3d1f.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/e/z/p89764-16171797226064344a0464e.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/w/n/p89764-162641124360f110ebc45e9.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/u/o/p89764-1617179730606434529aa0f.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/c/q/p89764-16171797386064345a4f3ee.jpg?tr=tr:n-medium",
+            "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/w/n/p89764-162641124360f110ebc45e9.jpg?tr=tr:n-medium"
+        ],
+        "reviews":[]
+
+    }
     ]
+    
+    
+
 }
