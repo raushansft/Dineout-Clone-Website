@@ -1,0 +1,113 @@
+#logo{
+    height:35px ;
+    width: 109px;
+}
+#logo_s{
+
+    height: 15px;
+    width: 15px;
+
+}
+
+
+#search{
+width: 20%;
+height: 30px;
+display: flex;
+align-items: center;
+border: 1px solid black;
+margin-left: 30px;
+margin-right: 60px;
+justify-content: center;
+}
+
+
+#navbar{
+
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    border: 2px solid pink;
+    width: 75%; 
+    margin-top: 15px;
+    
+
+}
+#nav2{
+
+   margin:  2px;
+    background-color:antiquewhite ;
+    justify-content: space-between;
+}
+
+  
+
+
+#foot{
+
+
+    text-align: center;
+}
+
+#Available{
+
+
+    display: flex;
+} 
+#home1{
+
+    display: flex;
+   
+    background-color: aqua;
+    
+    border: 1px solid black;
+}
+.home2{
+
+    justify-content: space-between;
+
+
+}
+#navs{
+
+margin-left: 25px;
+
+}
+#acc{
+
+    display: flex;
+    margin-left: 20px;
+
+}
+#box1{
+
+    border: 2px solid  black;
+    margin-right: 10px ;
+
+}
+#box2{
+
+    margin-right: 10px;
+
+}
+#homeimg{
+
+    width: 101%;
+    margin-top: 20px;
+    margin-left: -7px;
+}
+#Best1{
+
+    width: 60%;
+    margin-left: 12%;
+   
+
+
+}
+#img1{
+
+    height: 190px;
+    width: 150px;
+
+}
