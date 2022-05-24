@@ -10,12 +10,13 @@
             "Chinease",
             "Italian"
         ],
-        
+        "bestSellngItems":["Chicken", "Chicken Lollipop", "Bbq Wings", "Juice", "Brownies"],
         "address":"Thyagaraya Nagar",
         "city":"Cehnnai",
         "openingTime":"12:00 PM",
         "closingTime":"11:00 PM",
         "rating":"3.7",
+        "about":"Locofeast is a casual dining restaurant, located at HM Centre 29, Nungambakkam High Road, Nungambakkam in Chennai. It serves excellent and delicious North Indian, Seafood and Chinese food. Their ambiance is very appealing with a wall full of paintings and photos on it. People mainly visit Locofeast for its adorable décor and tasty food. Their staff is very courteous, friendly and well trained. It is very moderately priced, and thus, is the perfect place for a weekend meal with your group of friends.",
         "images":[
             "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/e/h/p89764-16171796726064341871b65.jpg?tr=tr:n-medium",
             "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/q/r/p89764-161717968060643420a33c8.jpg?tr=tr:n-medium",
@@ -30,7 +31,6 @@
             "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/w/n/p89764-162641124360f110ebc45e9.jpg?tr=tr:n-medium"
         ],
         "reviews":[]
-
     },
     {
         "id":2,

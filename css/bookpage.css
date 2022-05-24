@@ -1,9 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css");
+
+
 #bookpage-container{
     background-color: rgb(244,244,244);
     position: relative;
     width:100%;
-    padding-left: 13%;
+    /* padding-left: 13%; */
     padding-top: 50px;
+    font-family: "Metropolis","-apple-system,BlinkMacSystemFont","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";;
 }
 
 /* image modal */
@@ -18,6 +22,13 @@
     background-color: #000000;
     background-color: rgb(0, 0, 0);
     text-align: center;
+    overflow-y: scroll;
+}
+#image-modal::-webkit-scrollbar{
+    width:5px;
+}
+#image-modal::-webkit-scrollbar-thumb{
+    background-color:rgb(255, 255, 255);
 }
 #modal-img{
     margin: auto;
@@ -28,6 +39,7 @@
     font-size: 17px;
     color: white;
     position:absolute;
+    position: fixed;
     right: 10;
     top: 10;
 }
@@ -35,16 +47,19 @@
 
 #slider-container{
     width:52%;
+    margin-left: 13%;
 }
 #image-slider{
     position: relative;
     overflow: hidden;
     transition:white 50s ease-in-out;
+    background-color: white;
 }
 #image-slider>img{
     width:100%;
     height:450px;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     transition:white 50s ease-in-out;
     
 }
@@ -88,7 +103,7 @@
     position:absolute;
     padding:10px 12px;
     left: 80%;
-    bottom: 20;
+    bottom: 25%;
     font-size: 13px;
     color: white;
     cursor: pointer;
@@ -123,7 +138,72 @@
 
 }
 
+.restaurant-details-container{
+    width: 100%;
+}
 
+.restaurant-details{
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size:14px;
+    color:#696969;
+    line-height: 1.6;
+    letter-spacing: 0.5;
+    display: inline-block ;
+    vertical-align: middle;
+    width: 80%;
+}
+
+#name{
+    padding-top: 10px;
+    font-size: 22px;
+    color: #202020;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.8;
+    font-family: 'Metropolis', Bold;
+}
+.restaurant-details>div>i{
+    font-size: 13;
+}
+#rupees,#address,#city,.times{
+    color: #202020;
+
+}
+#opening-time{
+    color: rgb(53,149,255);
+    font-family: "metropolis",Bold;
+    font-weight: 600;
+}
+.vl{
+    border-left: 2px solid rgb(153,105,105);
+    height: 10px;
+
+}
+.review-rating{
+    float: right;
+    text-align: center;
+    padding: 20px;
+}
+
+#rating{
+    border-radius: 4px;
+    text-align: center;
+    background-color: #5ba727;
+    color:#fff;
+    padding:10px 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#rating~div{
+    padding-top: 10px;
+    color: rgb(53,149,255);
+    font-family: "metropolis",Bold;
+    font-weight: 600;
+    line-height: 1.2;
+    border-bottom: 2px dotted rgb(53,149,255);    
+}
 #booking-details-container{
     width:21%;
     position: fixed;
@@ -277,15 +357,19 @@ div>h5{
     margin-bottom: 25px;
     border: 0px solid rgb(241,241,241);
     border-radius: 5px;
+    
 }
 #email{
     display: none;
+    cursor: auto;   
 }
 #request{
     display: none;
+    cursor: auto;
 }
 #email-address,#special-request{
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #email-address>i,#special-request>i{
     font-size: 18px;
@@ -296,5 +380,143 @@ div>h5{
 #email-address>span,#special-request>span{
     font-size: 13px;
 }
+
+.menu-container{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#menu-bar{
+    width: 100%;
+    margin: 0;
+    padding:0;
+    background-color: white;
+}
+
+#menu-bar>li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'metropolis',bold;
+    padding: 17px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 5px solid white;
+}
+#menu-bar>li:hover{
+    border-bottom: 5px solid rgb(0,194,79);
+    color: rgb(0,194,79);
+}
+
+#overview{
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 7px;
+   
+}
+#overview>img{
+    width: 22%;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 7px;
+}
+#overview>span{
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+#menu,#about{
+    width:100%;
+    background-color: white;
+    position: relative;
+    border-radius: 7px;
+    margin-top: 10px;
+    
+}
+div>h3{
+    margin: 0;
+    padding: 10px 20px;
+}
+#menu-img{
+    width:50%;
+    padding-left: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+#menu-img>img{
+    width:34%;
+    height: 120px;
+
+}
+
+#total-menu{
+    text-align: center;
+    background-color: black;
+    width: 17%;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 20px;
+    padding: 4px 0;
+    font-size:12px;
+    font-family: 'metropolis',bold;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+
+#about-details{
+    width: 95%;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#read-more{
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(43,152,247);
+    margin-bottom: 10px;
+}
+
+.about-info{
+    width: 100%;
+    
+}
+.about-info>img{
+    width: 4%;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.about-info>div{
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.about-info>div>h4{
+    font-size: 14px;
+    font-family: 'metropolis',block;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ac8e48;
+
+}
+
+
+
+
 
 

@@ -19,7 +19,79 @@
               <div id="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
               <div id="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
               <button id="all-photos"> 13+ Images </button>
-            </div> 
+              <div class="restaurant-details-container">
+                  <div class="restaurant-details">
+                    <h1 id="name"></h1>
+                    <div><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;<span id="rupees"></span>&nbsp;<span class="vl"></span>&nbsp;<sapn id="food-type"></sapn></div>
+                    <div><span id="address"></span>&nbsp;<span class="vl"></span>&nbsp;<span id="city"></span></div>
+                    <div class="times">Time:&nbsp;<span id="opening-time"></span></div>
+                  </div>
+                  
+                  <div class="review-rating">
+                    <div id="rating"></div>
+                    <div><span id="total-review"></span>&nbsp;reviews</div>
+                  </div>
+              </div>
+        </div>
+
+        <!-- MENU BAR -->
+
+        <div class="menu-container">
+            <ul id="menu-bar">
+                <li class="active" href="#overview">Overview</a> <span class="vl-menu"></span>     
+                <li href="#menu">Menu</a>
+                <li href="#about">About</a>
+                <li href="#review">Reviews<span id="total-review"></span></a>
+                <li href="#help">Help</a>
+            </ul>
+
+            <div id="overview">
+                <img src="./images/gp-logo.webp">
+                <span>Combine any offer with Dineout Pay to <strong>save up to 10%</strong> more on your bill</span>
+            </div>
+            <div id="menu">
+                <h3>Menu</h3>
+                <div id="menu-img">
+                </div>
+                <div id="total-menu">Menu (13)</div>
+            </div>
+            <div id="about">
+                <h3>About</h3>
+                <p id="about-details"></p><div id="read-more">Read more</div>
+                <div  class="about-info">
+                    <img src="./images/cuisine.webp">
+                    <div>
+                        <h4>CUISINE</h4>
+                        <div id="cuisine"></div>
+                    </div>
+                </div>
+                <div  class="about-info">
+                    <img src="./images/type.webp">
+                    <div>
+                        <h4>TYPE</h4>
+                        <div id="dine-type"></div>
+                    </div>
+                </div>
+                <div  class="about-info">
+                    <img src="./images/average_cost.webp">
+                    <div>
+                        <h4>AVERAGE COST</h4>
+                        <div id="cost"></div>
+                    </div>
+                </div>
+                <div  class="about-info">
+                    <img src="./images/best_selling.webp">
+                    <div>
+                        <h4>BESTSELLING ITEMS</h4>
+                        <div id="cuisine"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="review"></div>
+            <div id="help"></div>
+        </div>
+        
+        
             
             <div id="booking-details-container">
                 <h5>Select an Offer or Deal</h5>

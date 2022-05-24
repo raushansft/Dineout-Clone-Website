@@ -27,16 +27,11 @@ function displayData(data){
 
     img.src=data.images[0];
 
-    var imgModal=document.getElementById('image-modal');
-    var modalImg=document.getElementById('modal-img'); 
-    var closeImgModal=document.getElementById('close');
     img.addEventListener('click',function(){
-        imgModal.style.display="block";
-        modalImg.src=img.src;
+        model(img.src);
     });
-    closeImgModal.addEventListener('click',function(){
-        imgModal.style.display="none"
-    });
+
+    
     let i=0
     document.getElementById("right-arrow").addEventListener('click',function(){
         if(i<image.length-1){
@@ -49,11 +44,63 @@ function displayData(data){
         img.src=image[i-1];
         i--;
        }
+    });
+
+
+
+    // Restaurant Details
+
+    let name=document.getElementById('name');
+    name.innerText=data.name;
+    let rupees=document.getElementById('rupees');
+    rupees.innerText=data.costForTwo+" for 2";
+    let foodType=document.getElementById('food-type');
+    foodType.innerText=data.foodType.join(", ");
+    let address=document.getElementById('address');
+    address.innerText=data.address;
+    let city=document.getElementById('city');
+    city.innerText=data.city;
+    let openingTime=document.getElementById('opening-time');
+    openingTime.innerText="(Opens at "+data.openingTime+")"; 
+
+    let rating=document.getElementById('rating');
+    rating.innerText=data.rating;
+    let totalReview=document.getElementById('total-review');
+    totalReview.innerText=data.reviews.length;
+
+
+
+    //menu-bar
+
+    let foodMenu=document.getElementById('menu-img');
+    let menuImg=document.createElement('img');
+    menuImg.src=data.menuImage;
+    foodMenu.append(menuImg);
+    menuImg.addEventListener('click',function(){
+        model(menuImg.src);
     })
+
+    let about=document.getElementById('about-details');
+    about.innerText=data.about;
     
+    let readMore=document.getElementById('read-more');
+    readMore.addEventListener('click',function(){
+        about.style.height='150px';
+        about.style.textOverflow='auto'
+        readMore.innerText="Read less";
+    });
 }
 
-
+function model(img){
+    var imgModal=document.getElementById('image-modal');
+    imgModal.style.display="block";
+    var modalImg=document.getElementById('modal-img'); 
+    var closeImgModal=document.getElementById('close');
+    modalImg.src=img;
+    closeImgModal.addEventListener('click',function(){
+        imgModal.style.display="none"
+    });
+}
 const dateSlideRight=document.getElementById('date-slide-right');
 const dateSlideLeft=document.getElementById('date-slide-left');
 var dateContainer=document.getElementById('dates');
