@@ -51,11 +51,14 @@ function displayData(productDatas){
         let _foodType= document.createElement("p");
         _foodType.textContent=product.foodType;
 
-      
-
-        divText.append(_title,_location,_price,_foodType,_rating);
-       
-
+        let dine=document.createElement("span");
+        dine.textContent="Dineout Pay ";
+        dine.setAttribute("class","dine");
+        dine.style.color="#F67373";
+        dine.style.backgroundColor="#FFF4F4";
+        dine.style.marginLeft="10px";
+        
+        divText.append(_title,_location,_price,_foodType,dine);
         card.append(divImg,divText);
         productDetails.append(card);
         

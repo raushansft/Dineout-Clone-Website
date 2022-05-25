@@ -117,8 +117,23 @@
 
         <!-- // implement product sho  -->
         <div id="product-container">
-            <p>Dineout > Delhi > Delhi Resaurants</p>
-            <h1>Best Restaurants Near Me in Delhi</h1>
+            <p style="color:#8f8f8f">Dineout > Delhi > Delhi Resaurants</p>
+           <div id="nav-title">
+            
+            <p>Best Restaurants Near Me in Delhi</p>
+            <div style="display: flex;justify-content: center;align-items: center;gap: 10px;">
+                <label for="SortBy">Sort By</label>
+                <select name="SortBy" id="sortby">
+                    
+
+                    <option value="Rating">Rating</option>
+                    <option value="Popularity">Popularity</option>
+                    <option value="Price: Low to High">Price: Low to High</option>
+                    <option value="Price: High to Low">Price: High to Low</option>
+                </select>
+                
+            </div>
+           </div>
             <div id="product-details"></div>
 
 
