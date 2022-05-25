@@ -40,12 +40,13 @@ function displayData(productDatas){
 
         let _title= document.createElement("p");
         _title.textContent=product.title;
+        _title.setAttribute("class","title")
 
         let _location= document.createElement("p");
         _location.textContent=product.location;
 
         let _price = document.createElement("p");
-        _price.textContent=product.price;
+        _price.textContent=`₹ ${product.price} for 2 (approx )`;
 
         let _foodType= document.createElement("p");
         _foodType.textContent=product.foodType;
