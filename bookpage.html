@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookPage</title>
     <link rel="stylesheet" type="text/css" href="./css/bookpage.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/photos.css"/>
     <script src="https://kit.fontawesome.com/c16d4da148.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="bookpage-container">
@@ -38,11 +40,11 @@
 
         <div class="menu-container">
             <ul id="menu-bar">
-                <li class="active" href="#overview">Overview</a> <span class="vl-menu"></span>     
-                <li href="#menu">Menu</a>
-                <li href="#about">About</a>
-                <li href="#review">Reviews<span id="total-review"></span></a>
-                <li href="#help">Help</a>
+                <li class="active"><a  href="#overview">Overview</a></li> <span class="vl-menu"></span>     
+                <li><a href="#menu">Menu</a></li>
+                <li><a  href="#about">About</a></li>
+                <li><a  href="#review">Reviews<span id="total-review"></span></a></li>
+                <li><a  href="#help">Help</a></li>
             </ul>
 
             <div id="overview">
@@ -80,15 +82,61 @@
                     </div>
                 </div>
                 <div  class="about-info">
-                    <img src="./images/best_selling.webp">
+                    <img src="./images/facility.webp">
                     <div>
-                        <h4>BESTSELLING ITEMS</h4>
-                        <div id="cuisine"></div>
+                        <h4>FACILITIES & FEATURES</h4>
+                        <div id="features">
+                            <div>
+                                <img src="./images/airconditionar.webp">
+                                <span>Air Conditioned</span>
+                            </div>
+                            <div>
+                                <img src="./images/lift.webp">
+                                <span>Lift</span>
+                            </div>
+                            <div>
+                                <img src="./images/homedelivery.webp">
+                                <span>Home Delivery</span>
+                            </div>
+                            <div>
+                                <img src="./images/parking.webp">
+                                <span>Parking</span>
+                            </div>
+                            <div>
+                                <img src="./images/card.webp">
+                                <span>Card Accepted</span>
+                            </div>
+                            <div>
+                                <img src="./images/wallet.webp">
+                                <span>Wallet Accepted</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="review"></div>
-            <div id="help"></div>
+            <div id="review">
+
+            </div>
+            <div id="help">
+                <h3>We're always here to help</h3>
+                <div>
+                    <div>
+                        <img src="./images/call.webp">
+                        <div>
+                            <span><strong>Call Us</strong></span><br/>
+                            <span>91+ 9212340202</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/call.webp">
+                        <div>
+                            <span><strong>Call the restaurant</strong></span><br/>
+                            <span>09677140625</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
         
         
@@ -145,6 +193,24 @@
 
             </div> 
             </div>
+        </div>
+
+        <div id="Photos-container">
+            <div id="photos-details">
+                <img id="photos-img">
+                <div class="photos-restaurant-details">
+                    <h1 id="photos-name"></h1>
+                    <div><span id="photos-address"></span>, <span id="photos-city"></span></div>
+                    <div><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;<span id="photos-rupees"></div><sapn id="photos-food-type"></div></div>
+                </div>
+                <div class="photos-review-rating">
+                    <div id="photos-rating"></div>
+                    <div><span id="photos-total-review"></span>&nbsp;reviews</div>
+                </div>
+             </div>
+            
+            
+        </div>
         </div>
     </div>
 </body>

@@ -1,0 +1,49 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css");
+
+#photos-container{
+    width:52%;
+    margin-left: 13%;
+}
+
+#photos-details{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition:white 50s ease-in-out;
+    background-color: white;
+}
+
+
+#photos-img{
+    width:35%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    transition:white 50s ease-in-out;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#photos-details>div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#photos-restaurant-details{
+    width: 10%;
+
+}
+#photos-name{
+    margin: 0;
+    font-size: 21px;
+    color: #202020;
+    font-weight: 600;
+    line-height: 1.8;
+    font-family: 'Metropolis', Bold;
+}
+
+#photos-review-rating{
+    width: 10%;
+}
+
+
+

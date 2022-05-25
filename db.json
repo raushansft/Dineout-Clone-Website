@@ -10,6 +10,7 @@
             "Chinease",
             "Italian"
         ],
+        "cuisine":["Chinese","Contiental","Thai","Italian"],
         "bestSellngItems":["Chicken", "Chicken Lollipop", "Bbq Wings", "Juice", "Brownies"],
         "address":"Thyagaraya Nagar",
         "city":"Cehnnai",
@@ -30,7 +31,7 @@
             "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/c/q/p89764-16171797386064345a4f3ee.jpg?tr=tr:n-medium",
             "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/w/n/p89764-162641124360f110ebc45e9.jpg?tr=tr:n-medium"
         ],
-        "reviews":[]
+        "reviews":[] 
     },
     {
         "id":2,

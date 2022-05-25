@@ -25,6 +25,9 @@ function displayData(data){
     var image=data.images;
     var img=document.getElementById('image-slider-image');
 
+    let pimage=document.getElementById('photos-img');
+    pimage.src=data.images[0];
+
     img.src=data.images[0];
 
     img.addEventListener('click',function(){
@@ -48,6 +51,8 @@ function displayData(data){
 
 
 
+
+
     // Restaurant Details
 
     let name=document.getElementById('name');
@@ -68,6 +73,26 @@ function displayData(data){
     let totalReview=document.getElementById('total-review');
     totalReview.innerText=data.reviews.length;
 
+    //photos
+
+
+    let pname=document.getElementById('photos-name');
+    pname.innerText=data.name;
+    let prupees=document.getElementById('photos-rupees');
+    prupees.innerText=data.costForTwo+" for 2 (approx)";
+    let pfoodType=document.getElementById('photos-food-type');
+    pfoodType.innerText=data.foodType.join(", ");
+    let paddress=document.getElementById('photos-address');
+    paddress.innerText=data.address;
+    let pcity=document.getElementById('photos-city');
+    pcity.innerText=data.city;
+    let popeningTime=document.getElementById('opening-time');
+    popeningTime.innerText="(Opens at "+data.openingTime+")"; 
+
+    let prating=document.getElementById('photos-rating');
+    prating.innerText=data.rating;
+    let ptotalReview=document.getElementById('photos-total-review');
+    ptotalReview.innerText=data.reviews.length;
 
 
     //menu-bar
@@ -89,6 +114,14 @@ function displayData(data){
         about.style.textOverflow='auto'
         readMore.innerText="Read less";
     });
+
+    let cuisine=document.getElementById('cuisine');
+    cuisine.innerText=data.cuisine;
+    let dineType=document.getElementById('dine-type');
+    dineType.innerText=data.type;
+    let cost=document.getElementById('cost');
+    cost.innerText=data.costForTwo+"for two people";
+    let 
 }
 
 function model(img){
