@@ -16,33 +16,16 @@
 </body>
 </html>
 <script>
-    async function submit(){
-        try{
-           result = document.getElementById('otp').value,
-        
-          console.log(result)
-          console.log(result.length)
-          if(result.length===6 ){
-            alert("thank you")
-            window.location.href = "index.html"
-          }
-          else if(result.length===0){
-            alert('please enter otp')
-
-          }
-          else{
-              alert('incorrect otp, please enter correct otp')
-          }
-         
+   
+    function submit(){
+        const otp = document.getElementById('otp').value;
+     console.log(otp)
+        if(otp.length!==6){
+            alert('enter 6 digits otp')
         }
-        catch(err){
-        console.log(err)
+        if(otp.length===6){
+            window.location.href='index.html'
+            alert('Successfully completed')
         }
-       
-    }
-    function display(data){
-        data.forEach(function(num){
-            
-        })
     }
 </script>

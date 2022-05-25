@@ -15,8 +15,8 @@
  <div id = "main">
      <a href = "#" id = "close"></a>
      <h2 id = "title">Log In / Sign Up</h2>
-   <form><input type = "text" placeholder="Enter Mobile number or Email " id="name" ><hr></form>
- <button id = "continue"onclick = 'Login()'>continue</button>
+   <form><input type = "email" placeholder="Enter Mobile number or Email " id="email" required><hr>
+ <button id = "continue"onclick = 'Login()'>continue</button></form>
  <p>__________________Or login via  _______________</p>
 
  <div class = "logo">
@@ -38,27 +38,22 @@
   });
 
 
-    let out = "";
-    async function Login(){
-        try{
-                out =document.getElementById('name').value
-            
-        console.log(out.length)
-              
-        if(out.length===0){
-                alert('please enter email')
-        }
-        else{
-        window.location.href = "signUp.html"
-        // alert("login successful")
-        }
-        
+    
+
+
+    function Login(){
+      const email= document.getElementById('email').value;
+      console.log(email,email.length)
+
+      if(email.length<10){
+        alert('try again login successfully')
+
+      }
+      else{
+        window.location.href='signUp.html'
+        alert('login successful')
+      }
+
     }
-        catch(err){
-        console.log(err)
-        }
-        
-    }
-    // Login()
     
 </script>
