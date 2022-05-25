@@ -1,21 +1,22 @@
 #logo{
-    height:35px ;
-    width: 109px;
+    height:33px ;
+    width: 100px;
 }
 #logo_s{
 
     height: 15px;
     width: 15px;
+    margin-right: -30%;
+    margin-left: -10px;
 
 }
 
 
 #search{
-width: 20%;
-height: 30px;
+
 display: flex;
 align-items: center;
-border: 1px solid black;
+
 margin-left: 30px;
 margin-right: 60px;
 justify-content: center;
@@ -28,7 +29,7 @@ justify-content: center;
     align-items: center;
     
     margin: auto;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: 75%; 
     margin-top: 15px;
     
@@ -53,7 +54,15 @@ justify-content: center;
 #Available{
 
 
+ 
     display: flex;
+    align-items: center;
+    
+    margin: auto;
+    /* border: 2px solid pink; */
+    width: 75%; 
+    margin-top: 15px;
+    
 } 
 #home1{
 
@@ -78,18 +87,31 @@ margin-left: 25px;
 
     display: flex;
     margin-left: 20px;
-
+    text-align: center;
+    align-items: center;
 }
 #box1{
-
-    border: 2px solid  black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffebea;
+    border: 2px solid #ff645a;
     margin-right: 10px ;
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
+    font-family: Metropolis, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"   ;
+    font-size:12px;
+    color: #ff645a;
 
+    
 }
 #box2{
-
+    text-align:left;
+    font-size: 14px ;
     margin-right: 10px;
-
+    font-family: Metropolis, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 #homeimg{
 
@@ -101,7 +123,7 @@ margin-left: 25px;
 
     width: 60%;
     margin-left: 12%;
-   
+  
 
 
 }
@@ -110,4 +132,62 @@ margin-left: 25px;
     height: 190px;
     width: 150px;
 
+}
+#search1{
+    
+    background-image:url(https://im1.dineout.co.in/images/uploads/misc/2021/Mar/31/oldherobannerwebfinal_bau.jpg);margin-top:0"
+     
+}
+#location>#places{
+    border-radius: 4px;
+    align-items: center;
+    border: 0.5px solid #bcbcbc;
+    padding: 0.4rem 1rem;
+    margin: 0 0 0 3rem;
+    width: 210px;
+    position: relative;
+    color: #666;
+}
+#bottomSection{
+    width: 50%;
+    margin-left:-60px;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#bottomSection>div>a{
+    text-decoration:none;
+    color: black;
+}
+#bottomSection>div>a:hover{
+    color: #FF645A;
+}
+
+#bottomSection>div{
+
+
+    font-family: Metropolis, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size:14px;
+    
+    
+}
+
+#off{
+
+background-color: #bcbcbc;
+margin-top: -2%;
+
+}
+
+#ava{
+
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    /* border: 2px solid pink; */
+    width: 70%; 
+    margin-top: 15px;
 }
