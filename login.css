@@ -11,8 +11,42 @@ body{
     text-align: center;
     border-radius:10px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    
+    transition: all ease-in-out .2s;
+    top:-415px;
 }
+label #btn, label #cancel{
+    position:absolute;
+    cursor:pointer;
+    background-color: aqua;
+    border-radius: 3px;
+    
+
+}
+label #btn{
+    right:2px;
+    top:20px;
+    font-size:20px;
+    padding:6px 10px;
+    transition:all .2s ease;
+}
+label #cancel{
+    z-index: index 111;
+    right:1px;
+    top:-30px;
+    font-size:20px;
+    color:white;
+    transition: all .2s ease;;
+}
+
+
+
+
+
+
+
+
+
+
 
 #email,#name{
     width:350px;
