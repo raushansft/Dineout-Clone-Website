@@ -14,6 +14,7 @@
         "bestSellngItems":["Chicken", "Chicken Lollipop", "Bbq Wings", "Juice", "Brownies"],
         "address":"Thyagaraya Nagar",
         "city":"Cehnnai",
+        "availableTimings":["10:05 AM","10:15 AM","10:20 AM","10:35 AM","11:00 AM","11:25 AM","12:30 PM"],
         "openingTime":"12:00 PM",
         "closingTime":"11:00 PM",
         "rating":"3.7",

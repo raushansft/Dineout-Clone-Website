@@ -1,11 +1,14 @@
+import restaurant from '../components/restaurant.js';
+import photos from '../components/photos.js'
 
-
+var sliderContainer = document.getElementById('slider-container');
+var found;
 getData();
 async function getData(){
         var url=" http://localhost:3000/restaurent"
         var data=await fetchData(url);
         
-        let found=data.find(el=>el.id===1);
+        found=data.find(el=>el.id===1);
         displayData(found);
    
 }
@@ -22,11 +25,12 @@ async function fetchData(url){
 
 
 function displayData(data){
+    sliderContainer.innerHTML=restaurant();
+
     var image=data.images;
     var img=document.getElementById('image-slider-image');
 
-    let pimage=document.getElementById('photos-img');
-    pimage.src=data.images[0];
+       
 
     img.src=data.images[0];
 
@@ -75,24 +79,12 @@ function displayData(data){
 
     //photos
 
+    let allPhotos=document.getElementById('all-photos');
+    allPhotos.addEventListener('click',function(){
+        var phto=photos();
+        gallary(data,phto); 
+    });
 
-    let pname=document.getElementById('photos-name');
-    pname.innerText=data.name;
-    let prupees=document.getElementById('photos-rupees');
-    prupees.innerText=data.costForTwo+" for 2 (approx)";
-    let pfoodType=document.getElementById('photos-food-type');
-    pfoodType.innerText=data.foodType.join(", ");
-    let paddress=document.getElementById('photos-address');
-    paddress.innerText=data.address;
-    let pcity=document.getElementById('photos-city');
-    pcity.innerText=data.city;
-    let popeningTime=document.getElementById('opening-time');
-    popeningTime.innerText="(Opens at "+data.openingTime+")"; 
-
-    let prating=document.getElementById('photos-rating');
-    prating.innerText=data.rating;
-    let ptotalReview=document.getElementById('photos-total-review');
-    ptotalReview.innerText=data.reviews.length;
 
 
     //menu-bar
@@ -121,7 +113,7 @@ function displayData(data){
     dineType.innerText=data.type;
     let cost=document.getElementById('cost');
     cost.innerText=data.costForTwo+"for two people";
-    let 
+
 }
 
 function model(img){
@@ -175,6 +167,11 @@ function displayDates(dateFormate){
     var datediv=document.createElement('div');
     datediv.innerText=dateFormate[1];
 
+    li.addEventListener('click',function(){
+        let sDate=document.getElementById('s-date');
+        sDate.innerHTML=dateFormate[1]+"-"+dateFormate[0]+"-2022  ";
+        availableTimings();
+    });    
     li.append(day,datediv);
     ul.append(li);
     
@@ -203,3 +200,104 @@ specialreq.addEventListener('click',function(){
     var AddReqText=document.getElementById('add-request-text');
     AddReqText.style.display='none';
 });
+
+
+function gallary(data,phto){
+
+    sliderContainer.innerHTML=phto;
+
+    let pimage=document.getElementById('photos-img');
+    pimage.src=data.images[0];
+    
+    let pname=document.getElementById('photos-name');
+    pname.innerText=data.name;
+    let prupees=document.getElementById('photos-rupees');
+    prupees.innerText=data.costForTwo;
+    let pfoodType=document.getElementById('photos-food-type');
+    pfoodType.innerText=data.foodType.join(", ");
+    let paddress=document.getElementById('photos-address');
+    paddress.innerText=data.address;
+    let pcity=document.getElementById('photos-city');
+    pcity.innerText=data.city;
+    
+    let prating=document.getElementById('photos-rating');
+    prating.innerText=data.rating;
+    let ptotalReview=document.getElementById('photos-total-review');
+    ptotalReview.innerText=data.reviews.length;
+
+    let galaryName=document.getElementById('galary-name');
+    galaryName.innerText=data.name+" Photos ("+data.images.length+")";
+
+    let pReseName=document.querySelectorAll("[id=p-res-name]");
+    console.log(pReseName)
+    let pResAddress=document.querySelectorAll("[id=p-address]");
+    for(let i=0;i<3;i++){
+        pReseName[i].innerText=data.name;
+        pResAddress[i].textContent=data.address;
+    }
+
+    
+    
+
+
+
+    let galaryGrid=document.getElementById('galary-grid');
+    data.images.forEach(function(ele){
+        console.log(ele);
+        let galaryImg=document.createElement('img');
+        galaryImg.src=ele;
+        galaryGrid.append(galaryImg);
+    })
+}
+
+
+
+
+//available timings
+
+function availableTimings(){
+    let chooseTiming=document.getElementById("choose-timing");
+    chooseTiming.innerHTML="";
+    let availtitle=document.createElement('div');
+    availtitle.innerText="Available Timings"
+    availtitle.className="avail-timings"
+    let timings=found.availableTimings;
+    let avaiCont=document.createElement('div');
+    avaiCont.className="avail-timings-container";
+    console.log(timings)
+    timings.forEach(function(ele){
+       
+        let item=document.createElement('div');
+        item.innerText=ele;
+        item.addEventListener('click',function(){
+            let stiming=document.getElementById('s-time');
+            stiming.innerText=ele;
+            chooseTiming.innerHTML="";
+            let guestCont=document.getElementById('select-Guest-Container');
+            guestCont.style.display="block";
+            var guestCount=document.getElementById('guest-count');
+            var continueButton=document.getElementById('continue');
+            var counter=0;
+            document.getElementById("add-guest").addEventListener('click',function(){
+                continueButton.style.display="block";
+                if(counter<=6){
+                    counter++;
+                    guestCount.innerText=counter;
+                } 
+            });
+            document.getElementById('remove-guest').addEventListener('click',function(){
+                if(counter==1){
+                    continueButton.style.display="none";
+                }
+                
+                if(counter>0){
+                    counter--;
+                    guestCount.innerText=counter;
+                }
+            });
+        });
+        avaiCont.append(item);
+    });
+    chooseTiming.append(availtitle,avaiCont);
+
+}

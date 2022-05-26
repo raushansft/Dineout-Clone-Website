@@ -45,6 +45,295 @@
 }
 
 
+
+
+/* BOOKING DETAILS CONTAINER */
+
+
+#booking-details-container{
+    width:21%;
+    position: fixed;
+    right: 11%;
+    top:40;
+    height:480px;
+    border-radius: 5px;
+    background-color: white;
+}
+#booking-scroll-container{
+    overflow-x: scroll;
+    height: 440px;
+}
+#booking-scroll-container::-webkit-scrollbar{
+    width:5px;
+}
+#booking-scroll-container::-webkit-scrollbar-thumb{
+    background-color:rgb(160,160,160);
+}
+#booking-details-container>h5{
+    margin: 0px;
+    padding: 12px 0px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+}
+#selected-date{
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e4d4d;
+    padding: 10px;
+}
+#s-time{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.select-date{
+    width:100%;
+    margin-top: 10px;
+    height: 92px;
+    /* overflow: scroll;   */
+}
+.select-date>h5{
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #202020;
+}
+.calender{
+    width:93%;
+    margin: auto;
+    box-shadow: 2px 2px 25px 2px rgb(236,236,236);   
+}
+.month{
+    width:13%;
+    padding:20px 10px 20px 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(43,152,247);
+}
+.month>span{
+    background-color: #0b5b8f;
+    color: white;
+    margin-top: 5px;
+    font-size: 8px;
+    padding:2px 6px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-family: Metropolis,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+}
+.month>img{
+    margin-top: 6px;
+    width:30px;
+    height: 35px;
+}
+.days{
+    width: 75%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+}
+.days>i{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.days>div{
+    display: inline-block;
+    /* transition:black 0.6s ease; */
+}
+
+#dates{
+    width:84%;
+    vertical-align: middle;
+    overflow-x: scroll;
+}
+#dates::-webkit-scrollbar{
+    display: none;
+}
+#dates>ul{
+    padding: 0;
+    list-style: none;
+    display: table;
+}
+#dates>ul>li{
+    display: table-cell;
+    padding: 0 7px;
+    color: rgb(105,105,105);
+    cursor: pointer;
+}
+#dates>ul>li>span{
+    font-size: 13px;
+    font-weight: 300;
+}
+#dates>ul>li>div{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+
+
+
+.timing-details{
+    padding:15px;
+}
+.timetitle{
+    font-size: 14px;
+}
+.timing-details>p{
+    margin: 0;
+    color: #696969;
+    padding-top: 5px;
+}
+
+.avail-timings{
+ width: 80%;
+ text-align: center;
+ margin-top: 10px;
+ margin-left: 10px;
+ padding: 10px;
+ box-shadow: 2px 2px 25px 2px rgb(204, 203, 203);
+ font-size: 14;
+ font-weight: 600;
+ color: #4d4d4d;
+
+}
+
+.avail-timings-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+
+}
+.avail-timings-container>div{
+    padding: 10px;
+    font-size: 13px;
+    background-color: rgb(220,220,220);
+    cursor: pointer;
+}
+
+
+/* guest  */
+#select-guest-container{
+    padding: 15px;
+    display: none;
+}
+
+#select-Guest-container>h5{
+    color: black;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+#select-guest-container>p{
+    margin: 0;
+    color: #696969;
+    margin-bottom: 10px;
+}
+#no-of-guest{
+    padding: 8px;
+    background-color: rgb(241,241,241);
+    text-align: left;
+    
+}
+.g-title{
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+}
+#add-guest{
+    font-size: 20px;
+    padding: 4px;
+    color: rgb(62,160,246);
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#guest-count{
+    font-size: 14px;
+    font-weight: 800;
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+#remove-guest{
+    font-size: 20px;
+    padding: 4px;
+    color: rgb(62,160,246);
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+div>h5{
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #232323;
+}
+.booking-details{
+    padding:15px;
+    padding-bottom: 50px;
+}
+
+
+.booking-details>input{
+    width:100%;
+    padding: 12px;
+    color:rgb(159,163,164);
+    background-color: rgb(241,241,241);
+    margin-bottom: 25px;
+    border: 0px solid rgb(241,241,241);
+    border-radius: 5px;
+}
+.booking-details>div>input{
+    width:100%;
+    padding: 12px;
+    color:rgb(159,163,164);
+    background-color: rgb(241,241,241);
+    margin-bottom: 25px;
+    border: 0px solid rgb(241,241,241);
+    border-radius: 5px;
+    
+}
+#email{
+    display: none;
+    cursor: auto;   
+}
+#request{
+    display: none;
+    cursor: auto;
+}
+#email-address,#special-request{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#email-address>i,#special-request>i{
+    font-size: 18px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 50%;
+    color: rgb(241,241,241);
+}
+#email-address>span,#special-request>span{
+    font-size: 13px;
+}
+
 #slider-container{
     width:52%;
     margin-left: 13%;
@@ -204,183 +493,6 @@
     line-height: 1.2;
     border-bottom: 2px dotted rgb(53,149,255);    
 }
-#booking-details-container{
-    width:21%;
-    position: fixed;
-    right: 11%;
-    top:40;
-    height:480px;
-    border-radius: 5px;
-    background-color: white;
-}
-#booking-scroll-container{
-    overflow-x: scroll;
-    height: 440px;
-}
-#booking-scroll-container::-webkit-scrollbar{
-    width:5px;
-}
-#booking-scroll-container::-webkit-scrollbar-thumb{
-    background-color:rgb(160,160,160);
-}
-#booking-details-container>h5{
-    margin: 0px;
-    padding: 12px 0px;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius:5px ;
-}
-.select-date{
-    width:100%;
-    margin-top: 10px;
-    height: 92px;
-    /* overflow: scroll;   */
-}
-.select-date>h5{
-    margin-top: 20px;
-    margin-left: 18px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 15px;
-    color: #202020;
-}
-.calender{
-    width:93%;
-    margin: auto;
-    box-shadow: 2px 2px 25px 2px rgb(236,236,236);   
-}
-.month{
-    width:13%;
-    padding:20px 10px 20px 15px;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: rgb(43,152,247);
-}
-.month>span{
-    background-color: #0b5b8f;
-    color: white;
-    margin-top: 5px;
-    font-size: 8px;
-    padding:2px 6px;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 2px;
-    font-family: Metropolis,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-weight: 600;
-}
-.month>img{
-    margin-top: 6px;
-    width:30px;
-    height: 35px;
-}
-.days{
-    width: 75%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    background-color: white;
-}
-.days>i{
-    display: inline-block;
-    cursor: pointer;
-    
-}
-.days>div{
-    display: inline-block;
-    /* transition:black 0.6s ease; */
-}
-
-#dates{
-    width:84%;
-    vertical-align: middle;
-    overflow-x: scroll;
-}
-#dates::-webkit-scrollbar{
-    display: none;
-}
-#dates>ul{
-    padding: 0;
-    list-style: none;
-    display: table;
-}
-#dates>ul>li{
-    display: table-cell;
-    padding: 0 7px;
-    color: rgb(105,105,105);
-}
-#dates>ul>li>span{
-    font-size: 14px;
-    font-weight: 300;
-}
-#dates>ul>li>div{
-    font-size: 15px;
-    font-weight: 800;
-    margin-top: 5px;
-}
-.timing-details{
-    padding:15px;
-}
-.timing-details>p{
-    margin: 0;
-    color: #696969;
-    padding-top: 5px;
-}
-.booking-details{
-    padding:15px;
-}
-div>h5{
-    margin: 0;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 15px;
-    color: #202020;
-}
-
-.booking-details>input{
-    width:100%;
-    padding: 12px;
-    color:rgb(159,163,164);
-    background-color: rgb(241,241,241);
-    margin-bottom: 25px;
-    border: 0px solid rgb(241,241,241);
-    border-radius: 5px;
-}
-.booking-details>div>input{
-    width:100%;
-    padding: 12px;
-    color:rgb(159,163,164);
-    background-color: rgb(241,241,241);
-    margin-bottom: 25px;
-    border: 0px solid rgb(241,241,241);
-    border-radius: 5px;
-    
-}
-#email{
-    display: none;
-    cursor: auto;   
-}
-#request{
-    display: none;
-    cursor: auto;
-}
-#email-address,#special-request{
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-#email-address>i,#special-request>i{
-    font-size: 18px;
-    background-color: rgb(85, 83, 83);
-    border-radius: 50%;
-    color: rgb(241,241,241);
-}
-#email-address>span,#special-request>span{
-    font-size: 13px;
-}
-
 .menu-container{
     margin-top: 10px;
     width: 100%;
@@ -576,6 +688,19 @@ div>h3{
     margin-left: 8px;
 }
 
+#continue{
+    position: absolute;
+    display: none;
+    width:100%;
+    font-size: 15px;
+    padding: 13px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(220,79,74);
+    border: none;
+    bottom: -20;
+    cursor: pointer;
+}
 
 
 
