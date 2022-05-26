@@ -301,3 +301,7 @@ function availableTimings(){
     chooseTiming.append(availtitle,avaiCont);
 
 }
+
+function continueGuest(){
+
+}
