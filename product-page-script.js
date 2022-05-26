@@ -19,8 +19,14 @@ async function fetchData(){
 }
 
 function displayData(productDatas){
+    let productDetails=document.querySelector("#product-details");
+    productDetails.innerHTML="";
     productDatas.forEach(product => {
-        console.log(product);
+        // console.log(product);
+        // productDetails.innerHTML="";
+
+       
+
         let card=document.createElement("div");
 
         let divImg=document.createElement("div");
@@ -64,3 +70,57 @@ function displayData(productDatas){
         
     });
 }
+
+
+
+
+// apply filter functionality
+
+
+async function fetchDataFilter(){
+    try {
+        let url="http://localhost:3000/products";
+        let res= await fetch(url);
+        let data= await res.json();
+        // console.log(data);
+        // console.log(data[0]);
+        let filterDAta=sortAndDisplayData(data);
+
+        // displayData(data);
+        
+    } catch (error) {
+        console.log(error, "Error in fatching data");
+        
+    }
+
+}
+
+
+function sortAndDisplayData(data){
+    
+    let val=document.querySelector("#sortby").value;
+
+    // based on ratting
+    data.sort(function(a,b){
+        if(val="Rating"){
+            return b.rating-a.rating;
+        }else if(val="Price: Low to High"){
+            return a.price-b.price;
+        }else if(val="Price: High to Low"){
+            return b.price-a.price;
+
+        }else{
+            return;
+        }
+        
+    });
+    // console.log(data);
+    displayData(data);
+}
+
+let sort=document.querySelector("#sortby");
+sort.addEventListener("change",function(){
+    let val=document.querySelector("#sortby").value;
+    console.log(val);
+    fetchDataFilter(); 
+});
